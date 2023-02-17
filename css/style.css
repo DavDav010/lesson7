@@ -1,0 +1,81 @@
+/*background image*/
+.bg-image{
+    background-image: url('../images/photographer.jpg');
+    height: 500px;
+    width: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg-text{
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 100px;
+}
+/*pseudo elements*/
+.text::before{
+    content: "left elements";
+    background-color: red;
+}
+.text::after{
+    content: "left elements";
+    background-color: red;
+    margin-left: 30px;
+}
+.text::first-letter{
+    color: yellow;
+    font-size: xx-large;
+    font-style: italic;
+}
+/*flex box*/
+.section{
+    background-color: grey;
+}
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+.left-box{
+    width: 550px;
+    height: 350px;
+    background-color: yellow;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-box{
+    width: 550px;
+    height: 350px;
+    background-color: red;
+}
+.box-wrapper{
+    display: flex;
+}
+.block1{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.block2{
+    width: 150px;
+    height: 150px;
+    background-color: rebeccapurple;
+}
+.block3{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+.block4{
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+}
+.block-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
